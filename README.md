@@ -55,3 +55,15 @@ Both Prometheus and InfluxDB feature basic visualizations and dashboards. To tru
 
 ## Summary
 Both of these products are excellent time series databases. They differ in their default mode (push for InfluxDB, pull for Prometheus). Some people argue that PromQL, Prometheus’ language, is simpler than the language used by InfluxDB, but, all in all, the decision to use one tool or the other will probably depend on your use case. If monitoring is what you’re most interested in, Prometheus is your safest bet because of its many integrations and scalable model. If you’re more likely to be using a time series database for IoT, sensors, or analytics, then you’ll probably want to choose InfluxDB.
+
+### Where InfluxDB is better:
+
+- If you're doing event logging.
+- Commercial option offers clustering for InfluxDB, which is also better for long term data storage.
+- Eventually consistent view of data between replicas.
+
+### Where Prometheus is better:
+
+- If you're primarily doing metrics.
+- More powerful query language, alerting, and notification functionality.
+- Higher availability and uptime for graphing and alerting.
